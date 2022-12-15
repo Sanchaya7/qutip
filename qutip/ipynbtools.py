@@ -341,7 +341,7 @@ def parallel_map(task, values, task_args=None, task_kwargs=None,
 
 
 def plot_animation(plot_setup_func, plot_func, result, name="movie",
-                   writer="avconv", codec="libx264", verbose=False):
+                   writer="ffmpeg", codec="libx264", verbose=False):
     """
     Create an animated plot of a Result object, as returned by one of
     the qutip evolution solvers.
